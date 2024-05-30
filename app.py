@@ -15,7 +15,7 @@ count = 0
 def detect_barcodes(camera):
     global is_detection_running
 
-    model_barcode = YOLO(r"D:\Coding\python\code\project\Bar_Code_detection\main hackaton\barcode detection s.pt")
+    model_barcode = YOLO(r"C:\Users\satwi\Downloads\Barcode_Detection_App\barcode detection s.pt")
 
     while is_detection_running:
         success, frame = camera.read()
