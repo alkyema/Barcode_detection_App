@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Barcode Detection Control</title>
+</head>
+<body>
+    <h1>Barcode Detection Control</h1>
+    <p>Barcode Detection Status: {% if barcode_detection_running %}Running{% else %}Stopped{% endif %}</p>
+    <form method="GET" action="/start_detection">
+        <button type="submit">Start Detection</button>
+    </form>
+    <form method="GET" action="/stop_detection">
+        <button type="submit">Stop Detection</button>
+    </form>
+</body>
+</html>
